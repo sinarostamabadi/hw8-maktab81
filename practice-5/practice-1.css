@@ -1,0 +1,215 @@
+:root {
+    --p-fontSize:15px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.welcome {
+    width: 100%;
+    height: 270px;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.welcome h1 {
+    font-size: 24px;
+    margin-top: 60px;
+    text-transform: capitalize;
+}
+.welcome p {
+    font-size: var(--p-fontSize);
+    margin-top: 10px;
+    width: 50%;
+}
+.welcome button {
+    width: 140px;
+    height: 45px;
+    background-color: rgb(35, 35, 35);
+    border: 1px solid rgb(187, 187, 187);
+    outline: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-top: 17px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.application {
+    width: 100%;
+    padding: 0px 0px 20px 0px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #eceae8;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.application h1 {
+    font-size: 24px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    color: #252525;
+}
+.phrase {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.phrase div {
+    width: 28%;
+    align-items: center;
+    font-size: var(--p-fontSize);
+    line-height: 20px;
+}
+.ternary-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(35, 35, 35);
+    color: #252525;
+    padding: 20px;
+}
+@media (max-width:768px) {
+    .ternary-box {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .box {
+        width: 100% !important;
+    }
+}
+@media (max-width:640px) {
+    .top-footer {
+        flex-direction: column !important;
+    }
+    .top-footer-left {
+        width: 100% !important;
+    }
+    .top-footer-right {
+        width: 100% !important;
+    }
+}
+@media (max-width:486px) {
+    .phrase {
+        flex-direction: column !important;
+        align-items: center;
+        padding: 0px 50px 0px 50px;
+    }
+    .left-phrase , .right-phrase {
+        width: 100% !important;
+    }
+    .welcome {
+        height: auto !important;
+        padding-bottom: 20px;
+    }
+}
+.box {
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 30px 25px;
+}
+.box h2 {
+    font-size: 19px;
+    text-transform: capitalize;
+}
+.box p {
+    margin-top: 20px;
+    font-size: var(--p-fontSize);
+}
+.handle-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    background-color: white;
+}
+.handle-box h1 {
+    font-size: 22px;
+    text-transform: capitalize;
+}
+.handle-box p {
+    margin-top: 30px;
+    width: 60%;
+    font-size: 15px;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.top-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.top-footer-left {
+    background-color: rgb(0, 123, 206);
+    width: 50%;
+    height: 210px;
+    text-align: center;
+    padding: 40px 25px;
+    color: #fdfefe;
+}
+.top-footer-left h2, .top-footer-right h2 {
+    font-size: 22px;
+    text-transform: capitalize;
+}
+.top-footer-right {
+    background-color: rgb(35, 35, 35);
+    width: 50%;
+    height:210px;
+    text-align: center;
+    padding: 40px 25px;
+    color: #fdfefe;
+}
+.top-footer-left p , .top-footer-right p {
+    margin-top: 30px;
+    font-size: 14px;
+}
+.top-footer-left a {
+    margin-top: 20px;
+    display: block;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+.bottom-footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+.span-blue {
+    color: #00709f;
+}
